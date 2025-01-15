@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector } from "react-redux";
+import HeroSection from "./Components/HeroSection";
+import {Routes,Route} from "react-router-dom"
+import LoginPage from "./Components/LoginPage";
+import PrivateRoute from "./Components/PrivateRoute";
+
 
 function App() {
+  const mode = useSelector((state)=>state.toggleSlice.isLightMode);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${mode && "bg-[#242424] text-white"}`}>
+
+        <Routes>
+          <Route path="/" element={<LoginPage/>}/>
+          <Route path="/todos" element={<PrivateRoute><HeroSection/></PrivateRoute> }/>
+        </Routes>
+        
+
     </div>
   );
 }
