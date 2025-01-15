@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Todo Application
 
-Todo Application
+
 
 Description
 
