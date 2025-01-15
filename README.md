@@ -6,11 +6,11 @@ Description
 
 This is a Todo application that allows users to manage their tasks efficiently. Users can log in with their email and password, and their session is saved in localStorage. Without logging in, users cannot create or manage todos. Once logged in, users can create, delete, and mark todos as completed or important. Todos are categorized into incomplete and completed sections, ensuring easy task management. All todos are saved in localStorage, so they persist even after the user refreshes the page or returns later. The application also features a logout functionality that clears the user's session and returns them to the home page.
 
-Features
+#Features
 
 User Authentication: Users must log in with an email and password to access the todo functionalities.
 
-Todo Management:
+#Todo Management:
 
 Create new todos
 
@@ -20,7 +20,7 @@ Mark todos as completed
 
 Mark todos as important
 
-Todo Organization:
+#Todo Organization:
 
 Incomplete todos are displayed at the top.
 
@@ -32,7 +32,7 @@ Logout Functionality: Users can log out, which removes their email from localSto
 
 Private Route: Ensures that only authenticated users can access the todo management route.
 
-Technologies Used
+#Technologies Used
 
 Frontend: React.js
 
@@ -42,11 +42,7 @@ Icons: react-icons
 
 Storage: localStorage
 
-Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/todo-app.git
+#Installation
 
 Navigate to the project directory:
 
@@ -60,7 +56,7 @@ Start the development server:
 
 npm start
 
-Usage
+#Usage
 
 Open the application in your browser at http://localhost:3000.
 
@@ -72,7 +68,7 @@ Create, delete, or mark your todos as completed or important.
 
 Log out when done to clear your session.
 
-Components
+#Components
 
 Login: Handles user authentication.
 
@@ -82,13 +78,13 @@ TodoItem: Represents a single todo item with options to mark as completed or imp
 
 PrivateRoute: Ensures routes are accessible only to logged-in users.
 
-LocalStorage Structure
+#LocalStorage Structure
 
 email: Stores the logged-in user's email.
 
 todos: Stores the array of todos, each with properties such as id, task, completed, and important.
 
-Future Enhancements
+#Future Enhancements
 
 Add support for user registration.
 
@@ -98,21 +94,21 @@ Add due dates and reminders for todos.
 
 Improve the UI/UX with additional styling and animations.
 
-Contributing
+#Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-License
+#License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgments
+#Acknowledgments
 
 Inspired by various task management applications.
 
 Thanks to the React and open-source community for their contributions.
 
-Contact
+#Contact
 
 For any questions or suggestions, please reach out at satynaryanmaurya989@gmail.com.
 
